@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>N even numbers</title>
+
+</head>
+<body>
+<center>
+<h1>N even numbers</h1>
+<hr>
+
+<p>Enter a Number:</p>
+<input type="number" value="2" id="p">
+
+
+<p>Numbers are:</p>
+<p id="c"></p>
+
+<button onclick="run(1);">Submit</button>
+</center>
+</body>
+<script type="text/javascript">
+function run(choice) {
+var p, d;
+p = document.getElementById('p').value;
+var n=0;
+var s="";
+if(choice==1){
+for (d = 0; d < p; d++) {
+s=s+""+n;
+document.getElementById('c').innerHTML = s;
+n=n+2;
+}}
+}
+</script>
+</html>
